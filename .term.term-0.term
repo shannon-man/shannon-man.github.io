@@ -1,0 +1,97 @@
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ ls
+[0m[01;34m__pycache__[0m  index.html  main.py  requirements.txt  [01;34mstatic[0m  [01;34mtemplates[0m  term.term  utils.py
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ ls..
+bash: ls..: command not found
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$  [Kls ..
+Cancer_detection.ipynb           intro_to_python.ipynb                        team_eda.ipynb
+EDA_mini_project.ipynb           linear_regression_numpy.ipynb                tuition_cost.csv
+Exploratory_Data_Notebook.ipynb  linear_regression_sklearn_on_own_data.ipynb
+[0m[01;34mapp[0m                              salary_potential.csv
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ ll[K[Kll
+total 40
+drwx------ 5 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  4 17:10 [0m[01;34m.[0m/
+drwx------ 3 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  4 17:10 [01;34m..[0m/
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3  744 Aug  4 17:11 .term.term-0.term
+drwx------ 2 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  4 14:10 [01;34m__pycache__[0m/
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3  365 Aug  4 17:09 index.html
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 1129 Aug  4 14:24 main.py
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3   64 Aug  1 17:52 requirements.txt
+drwx------ 7 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  1 17:56 [01;34mstatic[0m/
+drwx------ 2 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  4 17:04 [01;34mtemplates[0m/
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3    0 Aug  4 17:10 term.term
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3  730 Aug  4 14:08 utils.py
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ ls
+[0m[01;34m__pycache__[0m  index.html  main.py  requirements.txt  [01;34mstatic[0m  [01;34mtemplates[0m  term.term  utils.py
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ ll
+total 40
+drwx------ 5 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  4 17:10 [0m[01;34m.[0m/
+drwx------ 3 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  4 17:10 [01;34m..[0m/
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 2074 Aug  4 17:12 .term.term-0.term
+drwx------ 2 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  4 14:10 [01;34m__pycache__[0m/
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3  365 Aug  4 17:09 index.html
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 1129 Aug  4 14:24 main.py
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3   64 Aug  1 17:52 requirements.txt
+drwx------ 7 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  1 17:56 [01;34mstatic[0m/
+drwx------ 2 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3 4096 Aug  4 17:04 [01;34mtemplates[0m/
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3    0 Aug  4 17:10 term.term
+-rw------- 1 bddc9f3b0b6e4669ad3e82f6ebed57a3 bddc9f3b0b6e4669ad3e82f6ebed57a3  730 Aug  4 14:08 utils.py
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ ls
+[0m[01;34m__pycache__[0m  index.html  main.py  requirements.txt  [01;34mstatic[0m  [01;34mtemplates[0m  term.term  utils.py
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ qit.it[K[K[K[Kt.init[1P.init .init[C[C[C[C[1Pinitt init
+bash: qit: command not found
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ w[Kqir [K[K[Kt[Kit init
+bash: qit: command not found
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git init
+Initialized empty Git repository in /projects/bddc9f3b-0b6e-4669-ad3e-82f6ebed57a3/Shannon/app/.git/
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ echo pro[K[K[K'AI c[KCAmp[K[K[Kamp Summer 2022 Project" [K[K' > README>md[1Pmd.md[C[C
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ cat README.md
+AI Camp Summer 2022 Project
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git add README.md
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git commit -,[K[K-m "[K'First commit"[K'
+[master (root-commit) e6f7439] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git branch -M main
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git remote add originhttps://github.com/shannon-man/shannon-man.github.io [K nhttps://github.com/shannon-man/shannon-man.github.io[1Pnhttps://github.com/shannon-man/shannon-man.github.io[C https://github.com/shannon-man/shannon-man.github.io
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git remote add origin https://github.com/shannon-man/shannon-man.github.io
+fatal: remote origin already exists.
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git remote --version
+error: unknown option `version'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git remote --v
+origin	https://github.com/shannon-man/shannon-man.github.io (fetch)
+origin	https://github.com/shannon-man/shannon-man.github.io (push)
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git push^C
+git: 'push^C' is not a git command. See 'git --help'.
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git ouc[K[K[Kpush  [K--upstream[K[K[K[K[K[K[K[Kset-upztre[K[K[K[Kstream origin main
+Username for 'https://github.com': shannon-man
+Password for 'https://shannon-man@github.com': 
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/shannon-man/shannon-man.github.io
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git add-A [K[K[K -a[KA

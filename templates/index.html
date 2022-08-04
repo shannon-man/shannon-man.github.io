@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Team Gravity Wells</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/favicon.ico')}}" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/c08afbe94a.js" crossorigin="anonymous"></script>
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #FFE11F !important">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html" style="color: #5F1A61;">Gravity Wells</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#data">EDA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#ml">Machine Learning</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="bg-dark py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Car Accident Severity Study <i class="fa-solid fa-car-side fa-xs"></i><i class="fa-solid fa-car-burst"></i></h1>
+                                <p class="lead fw-normal text-white-50 mb-4">For our project, we chose to work on a dataset of traffic accidents in the Continental US from 2016 to 2021</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://www.nhtsa.gov/" target="_blank" style="background-color: #1B3174 !important; border-color: white !important;">Driving Safety</a>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents" target="_blank" style="background-color: #1B3174 !important; border-color: white !important;">Our Dataset</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{{url_for('static', filename='images/head_photo.png')}}" alt="..." /></div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- About section-->
+            <section id="about">
+                <div class="container px-4">
+                    <div class="row gx-4 justify-content-center">
+                        <div class="col-lg-8">
+                            <h2>About</h2>
+                            <p class="lead">Car accidents are common occurrences that happen all the time. Even if someone has never been directly involved in an accident it is likely they have experienced waiting in traffic caused by an accident. Many different factors, both environmental and human, can affect the severity of these accidents. In this project, we aim to predict the severity of a car accident using environmental data. Being able to do this effectively could help inform emergency services on how best to respond to a given accident, or even how many units to preemptively schedule on different days. We have been using multiple machine learning models to attempt to accurately predict the severity of traffic accidents. The severity is measured on a scale from one to four based on several factors such as the length of the cleanup, or the length of the affected road. We chose to do this project because of personal experiences with car accidents and for the widespread potential benefits it could have.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDA section-->
+            <section id="data">
+                <div class="container px-4">
+                    <div class="row gx-4 justify-content-center">
+                        <div class="col-lg-10">
+                            <h2>Dataset and EDA</h2>
+                            <p class="lead">As our team scoured Kaggle for datasets we could use for a machine learning project, one on traffic accidents within the Continental United States caught our eyes. This dataset provided many details on the traffic accidents that occurred, containing over 40 columns of data and including factors such as visibility, the distance of road affected, and time of day. Using the discussion tab on Kaggle, we were able to gain better insight into what each of the columns meant, as well as become aware of any issues or misinformation within the data. To prepare for an exploratory data analysis, we first removed any columns that would be unhelpful in predicting the severity of an accident, as well as all null values. We also found it necessary to manipulate the data for visualization purposes, such as when we represented the start time of an accident by minutes after midnight, so that we could focus solely on the relation between time of day and accident severity.</p>
+
+                            <iframe width="700" height="725" title="" src="{{url_for('static', filename='charts/corr_heatmap.html')}}" style='margin: 0 auto; display: block;'></iframe>
+                            <p class="lead">Above is the correlation heat map we generated to show the relationships between different variables in our data set. From it, we can see that there is generally fairly low correlation between variables, which can make machine learning difficult. However, using this visualization we can easily see comparisons we may want to make through other visualizations.</p>
+                            <hr>
+                            <div class="row gx-5">
+                                <div class="col-lg-6">
+                                    <iframe class='my-5' width="100%" height="400" title="" src="{{url_for('static', filename='charts/caraccidentsbytimeofday.html')}}"></iframe>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="lead my-5">To the left is a histogram produced to visualize the relationship between the time of day, represented by minutes after midnight, and the number of car accidents that occurred at that time. The first notable spike in the number of accidents can be seen around the 470 minute mark, or around 7:50 am, which coincides with the start of rush hour. A second and significantly higher spike in the number of accidents is noted at approximately 975 minutes after midnight or 4:15 pm. Once again, this increase could be attributed to rush hour, as a large number of cars being on the road at that time likely caused this spike in accident count. In addition, decreases in accident count occurred at around 4 a.m., while many are likely sleeping, and again at 9:45 am, when most commuters who drive to work have already arrived.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row gx-5">
+                                <div class="col-lg-6">
+                                    <p class="lead my-5">To the right is a histogram that measures the amount (count) of car accidents (y) to days after the Gregorian new year (x). We can see that there is a large dip on the 194-195 day mark (July 14-July 15) with a count of 125 accidents. As winter starts, the accidents increase and there is a peak on the 356-357 days with 3830 accidents occurring, likely due to weather conditions such as black ice. This makes sense as those days are Dec. 23-Dec. 24, Christmas Eve.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <iframe class='my-5' width="100%" height="400" title="" src="{{url_for('static', filename='charts/caraccidentsbytimeofyear.html')}}"></iframe>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row gx-5">
+                                <div class="col-lg-6">
+                                    <iframe class='my-5' class='my-5' width="100%" height="400" title="" src="{{url_for('static', filename='charts/effectoftemponaccidentcountandseverity.html')}}"></iframe>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="lead my-5">Our group decided to make a histogram showing the relationship between the severity level when affected by temperature. As the temperature increases, the level of severity increases as well. The highest accident severity level occurred at 72.5 to 73.4 degrees. More people tend to drive when the weather is pleasant. This diagram is accurate to the findings in our dataset because most car accidents occur at the highest severity level of 2.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row gx-5">
+                                <div class="col-lg-6">
+                                    <p class="lead my-5">The histogram to the right shows the severity count given the weather at the time. Looking at the graph you may see that the data is heavily skewed towards specific weather conditions. This imbalanced data may cause issues with using the data for machine learning. It should also be noted weather conditions are stored as string literals. Given these characteristics, it would be difficult to incorporate this column into machine learning; As a result, our team opted not to use this value to train our models. Nonetheless this data is useful to have for visualizations and should not be overlooked as it likely plays a role in the severity of car crashes.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <iframe class='my-5' width="100%" height="425" title="" src="{{url_for('static', filename='charts/accidentcountbysevgivenweather.html')}}"></iframe>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row gx-5">
+                                <div class="col-lg-6">
+                                    <iframe width="400" height="400" title="" src="{{url_for('static', filename='charts/mean_accident_severity_chloropleth.html')}}"></iframe>
+                                </div>
+                                <div class="col-lg-6">
+                                    <iframe width="400" height="400" title="" src="{{url_for('static', filename='charts/accident_count_chloropleth.html')}}"></iframe>
+                                </div>
+                            </div>
+                            <p class="lead">Above and to the left is a choropleth map which we created shows the mean accident severity of car crashes by state. From this choropleth, we can clearly see that Wisconsin has the highest mean severity at about 3.5, and Arizona has the lowest mean average at just below 2. Arizona has a low population, so there could be fewer severe accidents due to fewer people on the road. A majority of the states have a mean accident severity of around 2 which was expected because of the high number of accident severity 2 in our dataset compared to the number of severities 1, 3, and 4. Above and to the right is the other choropleth we made to show the number of car crashes per state. In the choropleth, we can see that California and Florida have the highest number of car accidents at 54k for California and 55k for Florida. These high numbers are likely due to the high population density, especially in the many major cities found in California and Florida. The lowest number of car accidents is 14 found in Wyoming; this low number could be because of the low population of that state or a data collection error. There is no even distribution of the number of car accidents across the states which is probably caused by the different traffic laws and populations.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ML section-->
+            <section id="ml">
+                <div class="container px-4">
+                    <div class="row gx-4 justify-content-center">
+                        <div class="col-lg-8">
+                            <h2>Machine Learning</h2>
+                            <p style="height: 48px;"></p>
+                            <div id="carouselExampleFade" class="carousel carousel-dark slide" style="margin-left: 50px; margin-right: 50px;" data-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                  </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <div style="height: 725px; border: 8px black;">
+                                        <h3>KNN</h3>
+                                        <img class="rounded-3" height=200 style='display: block; margin: 16px auto;' src="{{url_for('static', filename='images/knn.png')}}" alt="..." />
+                                        <p class="lead">KNN stands for K Nearest Neighbors and is a supervised machine learning method that we used to predict the severity of car accidents. KNN classifies an input point by looking at a k number of points nearest to it and classifies the input point as the same class as the majority of points of the value K; for example, trying to classify something as a dog or cat with K=7, if the 7 nearest points consist of 4 dogs points around and 3 cat points then the model would classify the input as a dog. KNN works best when the data is highly clustered so it can make easy distinctions between the different classes and accurately classify the input. The model also workest best when the k is equal to a number that has a modulus of 1 to decrease the chances of tieing when trying to classify.</p>
+                                        <br><p class="lead"></p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div style="height: 725px; border: 8px black;">
+                                        <h3>Support Vector Classifier (SVC)</h3>
+                                        <img class="rounded-3" height=200 style='display: block; margin: 16px auto;' src="{{url_for('static', filename='images/svc.png')}}" alt="..." />
+                                        <p class="lead">SVC, Support Vector Classifier, is a supervised machine learning model similar to KNN. SVC splits the data into different classes using boundaries to separate the labeled inputs. SVC classifies the inputs using the sections it created to split that data and classifies the input as which section it falls into. Like KNN, SVC models also work best when the data is highly clustered so it can make easy distinctions with its boundaries. SVC can easily fall short especially when the data points are near its dividing line because it becomes hard to make a distinction between the classes.</p>
+                                        <br><p class="lead"></p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div style="height: 725px; border: 8px black;">
+                                        <h3>Random Forest</h3>
+                                        <img class="rounded-3" height=200 style='display: block; margin: 16px auto;' src="{{url_for('static', filename='images/rf.png')}}" alt="..." />
+                                        <p class="lead">The Random Forest Classifier is a machine learning model that uses multiple decision trees to come to a predicted outcome. A decision tree will pass the input data through decision nodes to come to an outcome, which is then passed through another decision node. This process will repeat until the decision tree comes to an end. Each decision tree can “vote” for a predicted outcome and the winner of that “vote “is the output of the model. In essence, a Random Forest Classifier is an aggregation of many random decision trees to make the model stronger than having just one decision tree. Using function arguments such as n_estimators and max_depth, hyperparameters such as the number of trees in the forest and the depth of the decision trees can be set to improve model accuracy.</p>
+                                        <br><p class="lead"></p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div style="height: 725px; border: 8px black;">
+                                        <h3>Neural Networks</h3>
+                                        <img class="rounded-3" height=200 style='display: block; margin: 16px auto;' src="{{url_for('static', filename='images/nn.png')}}" alt="..." />
+                                        <p class="lead">Neural networks are a machine learning method based on actual networks of neurons in the human brain. In its simplest form, there is an input layer and an output layer, but hidden layers can be added in between to allow for more complex modeling. The layers are comprised of nodes that are linked to each other through weighted connections to form a network. Neural networks need to train in order to have accurate predictions. Neural networks are trained using an optimization algorithm to find weights to best map inputs to outputs. This optimization algorithm is called backpropagation (or backward propagation), which is a method of using the output of a network to know how much of the loss (error) every node is responsible for, and subsequently updating the weights in such a way that minimizes the loss. This loss is found by comparing values generated through forward-propagation with the expected value. Forward propagation is simply the way to move from the input layer to the output layer in the neural network.</p>
+                                        <br><p class="lead"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" style="margin-left: -96px;">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next" style="margin-right: -96px;">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <p class="lead">Below are the confusion matrices we used to visualize the results from our machine learning models. From the confusion matrices for KNN and SVC, we can see that SVC slightly outperformed KNN. Although both of these machine learning methods rely on clustered data, SVC was able to capture the patterns in our dataset more effectively. However, we can see that the SVC model tended to falsely identify many samples as having severity 2 when they were actually severity 3 or 4. The random forest classifier performed the best, achieving approximately 68% accuracy, which is reflected in its confusion matrix. Our neural network (multi-layer perceptron) classifier performed second best, although random forest was still the clear winner.</p>
+                            <div class="row gx-5" style="margin-bottom: -116px;">
+                                <div class="col-lg-6">
+                                    <iframe width="100%" height="500" title="" src="{{url_for('static', filename='charts/KNN_3897582.html')}}"></iframe>
+                                </div>
+                                <div class="col-lg-6">
+                                    <iframe width="100%" height="500" title="" src="{{url_for('static', filename='charts/SVC_4591038.html')}}"></iframe>
+                                </div>
+                            </div>
+                            <div class="row gx-5" style="margin-bottom: -116px;">
+                                <div class="col-lg-6">
+                                    <iframe width="100%" height="500" title="" src="{{url_for('static', filename='charts/Random_forest_6820768.html')}}"></iframe>
+                                </div>
+                                <div class="col-lg-6">
+                                    <iframe width="100%" height="500" title="" src="{{url_for('static', filename='charts/nn_conf_5092460.html')}}"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusion section-->
+            <section id="conclusion" style="padding-bottom: 9rem;">
+                <div class="container px-4">
+                    <div class="row gx-4 justify-content-center">
+                        <div class="col-lg-8">
+                            <h2>Conclusion</h2>
+                            <p class="lead">In conclusion, we were able to accurately predict the severity of a car accident based on a multitude of elements. We learned how to make machine learning models and visualizations to help test factors to the severity of traffic accidents. With the histograms, choropleths, and heatmap, we saw a lower correlation and measured the severity level to temperature, day, year, etc. Although we didn't have a lot of coding experience, we still managed to create a clear representation of our findings and provide information to help others realize the risks/consequences of traffic accidents.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Team Gravity Wells 2022</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
