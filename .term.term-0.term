@@ -138,4 +138,89 @@ Total 38 (delta 11), reused 0 (delta 0)
 remote: Resolving deltas:   0% (0/11)[Kremote: Resolving deltas:   9% (1/11)[Kremote: Resolving deltas:  18% (2/11)[Kremote: Resolving deltas:  27% (3/11)[Kremote: Resolving deltas:  36% (4/11)[Kremote: Resolving deltas:  45% (5/11)[Kremote: Resolving deltas:  54% (6/11)[Kremote: Resolving deltas:  63% (7/11)[Kremote: Resolving deltas:  72% (8/11)[Kremote: Resolving deltas:  81% (9/11)[Kremote: Resolving deltas:  90% (10/11)[Kremote: Resolving deltas: 100% (11/11)[Kremote: Resolving deltas: 100% (11/11), done.[K
 To https://github.com/shannon-man/shannon-man.github.io
    e6f7439..bc5be6c  main -> main
-(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ g
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git add -A
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git o[Kcommit -m "[K'index fix'
+[main 5ef51f9] index fix
+ 3 files changed, 63 insertions(+), 260 deletions(-)
+ delete mode 100644 templates/index2.html
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git push
+Username for 'https://github.com': shannon-man
+Password for 'https://shannon-man@github.com': 
+To https://github.com/shannon-man/shannon-man.github.io
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: failed to push some refs to 'https://github.com/shannon-man/shannon-man.github.io'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git push
+Username for 'https://github.com': shannon-man
+Password for 'https://shannon-man@github.com': 
+To https://github.com/shannon-man/shannon-man.github.io
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: failed to push some refs to 'https://github.com/shannon-man/shannon-man.github.io'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ s[Kgit push
+Username for 'https://github.com': shannon-  n.w.man@gmail.com
+Password for 'https://shannon.w.man@gmail.com@github.com': 
+To https://github.com/shannon-man/shannon-man.github.io
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: failed to push some refs to 'https://github.com/shannon-man/shannon-man.github.io'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ [K(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git pull origin main
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)Unpacking objects:  66% (2/3)Unpacking objects: 100% (3/3)Unpacking objects: 100% (3/3), 673 bytes | 336.00 KiB/s, done.
+From https://github.com/shannon-man/shannon-man.github.io
+ * branch            main       -> FETCH_HEAD
+   bc5be6c..ace4a12  main       -> origin/main
+hint: Waiting for your editor to close the file... [?1049h[?1h=[1;38r[23m[24m[0m[H[J[?25l[38;1H"~/Shannon/app/.git/MERGE_MSG" 6L, 312C[1;1H[33mMerge branch 'main' of https://github.com/shannon-[0mman/shannon-man.github.io into main
+[34m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[0m
+[1m[34m~                                                                                                                                                            [8;1H~                                                                                                                                                            [9;1H~                                                                                                                                                            [10;1H~                                                                                                                                                            [11;1H~                                                                                                                                                            [12;1H~                                                                                                                                                            [13;1H~                                                                                                                                                            [14;1H~                                                                                                                                                            [15;1H~                                                                                                                                                            [16;1H~                                                                                                                                                            [17;1H~                                                                                                                                                            [18;1H~                                                                                                                                                            [19;1H~                                                                                                                                                            [20;1H~                                                                                                                                                            [21;1H~                                                                                                                                                            [22;1H~                                                                                                                                                            [23;1H~                                                                                                                                                            [24;1H~                                                                                                                                                            [25;1H~                                                                                                                                                            [26;1H~                                                                                                                                                            [27;1H~                                                                                                                                                            [28;1H~                                                                                                                                                            [29;1H~                                                                                                                                                            [30;1H~                                                                                                                                                            [31;1H~                                                                                                                                                            [32;1H~                                                                                                                                                            [33;1H~                                                                                                                                                            [34;1H~                                                                                                                                                            [35;1H~                                                                                                                                                            [36;1H~                                                                                                                                                            [37;1H~                                                                                                                                                            [0m[38;140H1,1[11CAll[1;1H[34h[?25h[?25l[38;130H~@k[1;1H[38;130H   [1;1H[34h[?25h[?25l[38;130H~@k[1;1H[38;130H   [1;1H[34h[?25h[?25l[38;130H~@k[1;1H[38;130H   [1;1H[34h[?25h[?25l[38;130H~@k[1;1H[38;130H   [1;1H[34h[?25h[?25l[38;130H~@k[1;1H[38;130H   [1;1H[34h[?25h[?25l[38;140H2[2;1H[34h[?25h[?25l[38;140H3[3;1H[34h[?25h[?25l[38;140H4[4;1H[34h[?25h[?25l[38;140H5[5;1H[34h[?25h[?25l[38;140H6[6;1H[34h[?25h[?25l[38;130H~@k[6;1H[38;130H   [6;1H[34h[?25h[?25l[38;130H:[6;1H[38;1H[K[38;1H:[34h[?25hqw[?25l[1m[37m[41mE492: Not an editor command: qw[6;1H[0m[38;140H6,1[11CAll[6;1H[34h[?25h[?25l[38;130H:[6;1H[38;1H[K[38;1H:[34h[?25hq[?25l[38;1H[K[38;1H[?1l>[34h[?25h[?1049l[KMerge made by the 'recursive' strategy.
+ index.html | 6 [32m+++[m[31m---[m
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git push
+Username for 'https://github.com': shannon-man
+Password for 'https://shannon-man@github.com': 
+Enumerating objects: 12, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 1.98 KiB | 1.98 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 2 local objects.[K
+To https://github.com/shannon-man/shannon-man.github.io
+   ace4a12..1706700  main -> main
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ (base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git o[Kpull origin main
+remote: Enumerating objects: 16, done.[K
+remote: Counting objects:   6% (1/16)[Kremote: Counting objects:  12% (2/16)[Kremote: Counting objects:  18% (3/16)[Kremote: Counting objects:  25% (4/16)[Kremote: Counting objects:  31% (5/16)[Kremote: Counting objects:  37% (6/16)[Kremote: Counting objects:  43% (7/16)[Kremote: Counting objects:  50% (8/16)[Kremote: Counting objects:  56% (9/16)[Kremote: Counting objects:  62% (10/16)[Kremote: Counting objects:  68% (11/16)[Kremote: Counting objects:  75% (12/16)[Kremote: Counting objects:  81% (13/16)[Kremote: Counting objects:  87% (14/16)[Kremote: Counting objects:  93% (15/16)[Kremote: Counting objects: 100% (16/16)[Kremote: Counting objects: 100% (16/16), done.[K
+remote: Compressing objects:  10% (1/10)[Kremote: Compressing objects:  20% (2/10)[Kremote: Compressing objects:  30% (3/10)[Kremote: Compressing objects:  40% (4/10)[Kremote: Compressing objects:  50% (5/10)[Kremote: Compressing objects:  60% (6/10)[Kremote: Compressing objects:  70% (7/10)[Kremote: Compressing objects:  80% (8/10)[Kremote: Compressing objects:  90% (9/10)[Kremote: Compressing objects: 100% (10/10)[Kremote: Compressing objects: 100% (10/10), done.[K
+remote: Total 13 (delta 6), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:   7% (1/13)Unpacking objects:  15% (2/13)Unpacking objects:  23% (3/13)Unpacking objects:  30% (4/13)Unpacking objects:  38% (5/13)Unpacking objects:  46% (6/13)Unpacking objects:  53% (7/13)Unpacking objects:  61% (8/13)Unpacking objects:  69% (9/13)Unpacking objects:  76% (10/13)Unpacking objects:  84% (11/13)Unpacking objects:  92% (12/13)Unpacking objects: 100% (13/13)Unpacking objects: 100% (13/13), 2.68 KiB | 210.00 KiB/s, done.
+From https://github.com/shannon-man/shannon-man.github.io
+ * branch            main       -> FETCH_HEAD
+   1706700..fd1e21e  main       -> origin/main
+Updating 1706700..fd1e21e
+Fast-forward
+ templates/index.html | 8 [32m++++[m[31m----[m
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ git pull origin main
+From https://github.com/shannon-man/shannon-man.github.io
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+(base) ]0;~/Shannon/app[01;34m~/Shannon/app[00m$ g
